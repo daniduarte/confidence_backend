@@ -21,7 +21,7 @@ gem 'puma', '~> 3.0'
 gem 'rack-cors'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'devise'
-gem 'meli'
+gem 'meli', '~> 0.0.1', git: 'git@github.com:lubc/ruby-sdk.git', tag: 'country_support_and_improvements'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

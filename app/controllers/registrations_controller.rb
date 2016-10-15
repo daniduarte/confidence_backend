@@ -1,8 +1,8 @@
 class RegistrationsController < Devise::RegistrationsController
-  def get_meli_auth_url
+  def get_meli_auth_url    
     meli = Meli.new(1213949921402143, 'VT2tlhth0TLDe99pojRvhtb4szSSVhhq')
-    meli_auth_url = meli.auth_url(params[:callbackUrl].gsub("'", '').to_s)
-    render json: { url: meli_auth_url }
+    auth_url = meli.auth_url(params[:callbackUrl].gsub("'", '').to_s, 'CL')
+    render json: { url: auth_url }
   end
 
   def connect_with_meli
