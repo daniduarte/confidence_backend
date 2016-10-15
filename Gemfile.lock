@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:lubc/ruby-sdk.git
+  revision: 74762e732b52a63ede389a99ec6b116c007d1ed4
+  tag: country_support_and_improvements
+  specs:
+    meli (0.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -71,7 +78,6 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
-    meli (1.0.3.3)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -147,7 +153,7 @@ DEPENDENCIES
   byebug
   devise
   listen (~> 3.0.5)
-  meli
+  meli (~> 0.0.1)!
   puma (~> 3.0)
   rack-cors
   rails (~> 5.0.0, >= 5.0.0.1)
